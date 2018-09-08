@@ -1,7 +1,7 @@
     var _doc=document.getElementsByTagName('head')[0];
     var script=document.createElement('script');
     script.setAttribute('type','text/javascript');
-    script.setAttribute('src','http://libs.baidu.com/jquery/1.11.1/jquery.min.js');
+    script.setAttribute('src','https://libs.baidu.com/jquery/1.11.1/jquery.min.js');
     _doc.appendChild(script);
     script.onload=script.onreadystatechange=function(){
         if(!this.readyState||this.readyState=='loaded'||this.readyState=='complete'){
@@ -31,7 +31,7 @@ function hello(){
 
                 $.ajax({
                     type : "post",
-                    url : "http://weibo.com/p/aj/v6/mblog/modifyvisible?ajwvr=6&domain=100505&__rnd="+(new Date().getTime()).toString(),
+                    url : "https://weibo.com/p/aj/v6/mblog/modifyvisible?ajwvr=6&domain=100505&__rnd="+(new Date().getTime()).toString(),
                     data : { "visible": 1,"mid":mid,"_t":0 },
                     async : false,
                     success : function(data){
